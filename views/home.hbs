@@ -1,0 +1,32 @@
+<div class="container mt-3" id="bienvenida">
+    <div class="p-3 d-flex justify-content-between" style="background-color: rgb(156, 221, 159);">
+        <h1 id="usuario" style="color: green">Bienvenido {{{userMail}}} </h1>
+        <a class="btn btn-warning d-flex p-1 align-items-center" href='/logout'>Desloguearse</a>
+    </div>
+</div>
+<div class="container w-50 pb-3 mb-2 bg-light ">
+    <h2 class="danger text-center">Lista productos</h2>
+    <div>
+        <div class="container bg-dark text-light">
+            <div class="row">
+                <p class="col-4">Nombre</p>
+                <p class="col-4">Precio</p>
+                <p class="col-4">Imagen</p>
+            </div>
+        </div>
+        <div class="container bg-dark text-light mt-1" id="mi-tr">
+        </div>
+    </div>
+</div>
+<div class="container w-50 bg-light">
+    <h2 class="danger text-center">Mensajes</h2>
+    <form onsubmit="return addMessage(this)">
+        <input type="email" id="username" placeholder="Tu email">
+        <input type="text" id="texto" placeholder="Mensaje">
+        <input type="submit" value="Enviar">
+    </form>
+    <div id="mi-p"></div>
+</div>
+
+
+<script src="/index.js"></script>
